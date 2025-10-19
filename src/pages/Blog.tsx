@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import TronAnimation from "@/components/TronAnimation";
 import TerminalWindow from "@/components/TerminalWindow";
 import TerminalPrompt from "@/components/TerminalPrompt";
 import BlogCard from "@/components/BlogCard";
@@ -9,7 +8,6 @@ import { ArrowLeft } from "lucide-react";
 const Blog = () => {
   return (
     <div className="min-h-screen relative">
-      <TronAnimation />
       <div className="scan-line"></div>
       
       <div className="relative z-10 container mx-auto px-4 py-12 max-w-6xl">

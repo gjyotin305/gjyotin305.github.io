@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import TronAnimation from "@/components/TronAnimation";
 import TerminalWindow from "@/components/TerminalWindow";
 import TerminalPrompt from "@/components/TerminalPrompt";
 import { blogPosts } from "@/data/blogIndex";
@@ -37,7 +36,6 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen relative">
-      <TronAnimation />
       <div className="scan-line"></div>
       
       <div className="relative z-10 container mx-auto px-4 py-12 max-w-4xl">

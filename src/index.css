@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* TRON Terminal Theme - Deep Blue/Cyan */
-    --background: 225 73% 6%;
+    --background: 0 0% 0%;
     --foreground: 186 100% 85%;
 
     --card: 225 60% 8%;
@@ -58,12 +58,7 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-mono;
-    background-image: 
-      linear-gradient(0deg, transparent 24%, hsl(var(--grid-color)) 25%, hsl(var(--grid-color)) 26%, transparent 27%, transparent 74%, hsl(var(--grid-color)) 75%, hsl(var(--grid-color)) 76%, transparent 77%, transparent),
-      linear-gradient(90deg, transparent 24%, hsl(var(--grid-color)) 25%, hsl(var(--grid-color)) 26%, transparent 27%, transparent 74%, hsl(var(--grid-color)) 75%, hsl(var(--grid-color)) 76%, transparent 77%, transparent);
-    background-size: 50px 50px;
-    background-position: 0 0, 0 0;
+    @apply bg-black text-foreground font-mono;
   }
 
   /* Terminal text glow effect */

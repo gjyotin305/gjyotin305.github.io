@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
-import TronAnimation from "@/components/TronAnimation";
 import TerminalPrompt from "@/components/TerminalPrompt";
 import TerminalWindow from "@/components/TerminalWindow";
+import TronBikeAnimation from "@/components/TronBikeAnimation";
 import { Github, Linkedin, Mail, BookOpen, Code2, GraduationCap } from "lucide-react";
 
 const Index = () => {
   return (
     <div className="min-h-screen relative">
-      <TronAnimation />
       <div className="scan-line"></div>
       
       <div className="relative z-10 container mx-auto px-4 py-12 max-w-6xl">
@@ -59,24 +58,8 @@ const Index = () => {
 
         {/* ASCII Art */}
         <div className="mb-12">
-          <TerminalWindow title="~/ascii-art.sh">
-            <pre className="text-primary text-xs md:text-sm terminal-glow overflow-x-auto">
-{`
-   ╔══════════════════════════════════════════════════════════╗
-   ║                                                          ║
-   ║   ███╗   ███╗██╗         ██████╗ ███████╗███████╗       ║
-   ║   ████╗ ████║██║         ██╔══██╗██╔════╝██╔════╝       ║
-   ║   ██╔████╔██║██║         ██████╔╝█████╗  ███████╗       ║
-   ║   ██║╚██╔╝██║██║         ██╔══██╗██╔══╝  ╚════██║       ║
-   ║   ██║ ╚═╝ ██║███████╗    ██║  ██║███████╗███████║       ║
-   ║   ╚═╝     ╚═╝╚══════╝    ╚═╝  ╚═╝╚══════╝╚══════╝       ║
-   ║                                                          ║
-   ║          [NEURAL NETWORKS] [DEEP LEARNING]              ║
-   ║          [ARCHITECTURE SEARCH] [AI SYSTEMS]             ║
-   ║                                                          ║
-   ╚══════════════════════════════════════════════════════════╝
-`}
-            </pre>
+          <TerminalWindow title="~/tron-bike.sh">
+            <TronBikeAnimation />
           </TerminalWindow>
         </div>
 
