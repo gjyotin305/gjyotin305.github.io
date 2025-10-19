@@ -8,6 +8,44 @@ const Index = () => {
     <div className="min-h-screen relative">
       <div className="scan-line"></div>
       
+      {/* Navigation Bar */}
+      <nav className="sticky top-0 z-50 border-b-2 border-primary/30 bg-black/95 backdrop-blur-sm">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="flex items-center justify-between py-3">
+            <div className="flex items-center gap-2">
+              <span className="text-accent terminal-glow text-sm">guest@portfolio</span>
+              <span className="text-muted-foreground">:</span>
+              <span className="text-secondary">~</span>
+              <span className="text-muted-foreground">$</span>
+              <span className="text-foreground/80 text-sm">./navigation.sh</span>
+            </div>
+            <div className="flex gap-3">
+              <Link 
+                to="/about"
+                className="flex items-center gap-2 px-3 py-1.5 text-sm border border-primary/30 rounded hover:border-primary hover:bg-primary/10 transition-all terminal-glow"
+              >
+                <GraduationCap className="w-4 h-4" />
+                <span>about</span>
+              </Link>
+              <Link 
+                to="/projects"
+                className="flex items-center gap-2 px-3 py-1.5 text-sm border border-primary/30 rounded hover:border-primary hover:bg-primary/10 transition-all terminal-glow"
+              >
+                <Code2 className="w-4 h-4" />
+                <span>projects</span>
+              </Link>
+              <Link 
+                to="/blog"
+                className="flex items-center gap-2 px-3 py-1.5 text-sm border border-primary/30 rounded hover:border-primary hover:bg-primary/10 transition-all terminal-glow"
+              >
+                <BookOpen className="w-4 h-4" />
+                <span>blog</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
       <div className="relative z-10 container mx-auto px-4 py-12 max-w-6xl">
         {/* Header */}
         <header className="mb-16">
@@ -25,65 +63,6 @@ const Index = () => {
             </div>
           </TerminalWindow>
         </header>
-
-        {/* Navigation */}
-        <nav className="mb-12">
-          <TerminalWindow title="~/navigation.sh">
-            <div className="flex flex-wrap gap-4">
-              <Link 
-                to="/about"
-                className="flex items-center gap-2 px-4 py-2 border-2 border-primary/30 rounded hover:border-primary hover:bg-primary/10 transition-all terminal-glow"
-              >
-                <GraduationCap className="w-4 h-4" />
-                <span>about</span>
-              </Link>
-              <Link 
-                to="/projects"
-                className="flex items-center gap-2 px-4 py-2 border-2 border-primary/30 rounded hover:border-primary hover:bg-primary/10 transition-all terminal-glow"
-              >
-                <Code2 className="w-4 h-4" />
-                <span>projects</span>
-              </Link>
-              <Link 
-                to="/blog"
-                className="flex items-center gap-2 px-4 py-2 border-2 border-primary/30 rounded hover:border-primary hover:bg-primary/10 transition-all terminal-glow"
-              >
-                <BookOpen className="w-4 h-4" />
-                <span>blog</span>
-              </Link>
-            </div>
-          </TerminalWindow>
-        </nav>
-
-        {/* ASCII Art */}
-        <div className="mb-12">
-          <TerminalWindow title="~/tron-bike.sh">
-            <pre className="text-primary text-xs md:text-sm terminal-glow overflow-x-auto">
-{`
-   ╔══════════════════════════════════════════════════════════╗
-   ║                                                          ║
-   ║   ███╗   ███╗██╗         ██████╗ ███████╗███████╗       ║
-   ║   ████╗ ████║██║         ██╔══██╗██╔════╝██╔════╝       ║
-   ║   ██╔████╔██║██║         ██████╔╝█████╗  ███████╗       ║
-   ║   ██║╚██╔╝██║██║         ██╔══██╗██╔══╝  ╚════██║       ║
-   ║   ██║ ╚═╝ ██║███████╗    ██║  ██║███████╗███████║       ║
-   ║   ╚═╝     ╚═╝╚══════╝    ╚═╝  ╚═╝╚══════╝╚══════╝       ║
-   ║                                                          ║
-   ║          [NEURAL NETWORKS] [DEEP LEARNING]              ║
-   ║          [ARCHITECTURE SEARCH] [AI SYSTEMS]             ║
-   ║                                                          ║
-   ║                                                          ║
-   ║                      ___                                 ║
-   ║                     /   \\_______________                 ║
-   ║                    |  O  |______________|>               ║
-   ║                     \\___/     O      O                   ║
-   ║                  ═══════════════════════════════>        ║
-   ║                                                          ║
-   ╚══════════════════════════════════════════════════════════╝
-`}
-            </pre>
-          </TerminalWindow>
-        </div>
 
         {/* Intro Section */}
         <div className="mb-12">
