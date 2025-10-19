@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import TerminalPrompt from "@/components/TerminalPrompt";
 import TerminalWindow from "@/components/TerminalWindow";
-import TronBikeAnimation from "@/components/TronBikeAnimation";
 import { Github, Linkedin, Mail, BookOpen, Code2, GraduationCap } from "lucide-react";
 
 const Index = () => {
@@ -59,30 +58,56 @@ const Index = () => {
         {/* ASCII Art */}
         <div className="mb-12">
           <TerminalWindow title="~/tron-bike.sh">
-            <TronBikeAnimation />
+            <pre className="text-primary text-xs md:text-sm terminal-glow overflow-x-auto">
+{`
+   ╔══════════════════════════════════════════════════════════╗
+   ║                                                          ║
+   ║   ███╗   ███╗██╗         ██████╗ ███████╗███████╗       ║
+   ║   ████╗ ████║██║         ██╔══██╗██╔════╝██╔════╝       ║
+   ║   ██╔████╔██║██║         ██████╔╝█████╗  ███████╗       ║
+   ║   ██║╚██╔╝██║██║         ██╔══██╗██╔══╝  ╚════██║       ║
+   ║   ██║ ╚═╝ ██║███████╗    ██║  ██║███████╗███████║       ║
+   ║   ╚═╝     ╚═╝╚══════╝    ╚═╝  ╚═╝╚══════╝╚══════╝       ║
+   ║                                                          ║
+   ║          [NEURAL NETWORKS] [DEEP LEARNING]              ║
+   ║          [ARCHITECTURE SEARCH] [AI SYSTEMS]             ║
+   ║                                                          ║
+   ║                                                          ║
+   ║                      ___                                 ║
+   ║                     /   \\_______________                 ║
+   ║                    |  O  |______________|>               ║
+   ║                     \\___/     O      O                   ║
+   ║                  ═══════════════════════════════>        ║
+   ║                                                          ║
+   ╚══════════════════════════════════════════════════════════╝
+`}
+            </pre>
           </TerminalWindow>
         </div>
 
-        {/* Quick Stats */}
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
-          <TerminalWindow title="~/research.log">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-accent terminal-glow mb-2">15+</div>
-              <div className="text-muted-foreground">Publications</div>
-            </div>
-          </TerminalWindow>
-          
-          <TerminalWindow title="~/projects.log">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-accent terminal-glow mb-2">30+</div>
-              <div className="text-muted-foreground">ML Projects</div>
-            </div>
-          </TerminalWindow>
-          
-          <TerminalWindow title="~/citations.log">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-accent terminal-glow mb-2">500+</div>
-              <div className="text-muted-foreground">Citations</div>
+        {/* Intro Section */}
+        <div className="mb-12">
+          <TerminalWindow title="~/intro.log">
+            <div className="space-y-4">
+              <TerminalPrompt command="cat philosophy.txt" />
+              <div className="ml-6 space-y-3 text-foreground/90">
+                <div className="flex items-start gap-3">
+                  <span className="text-accent terminal-glow">▸</span>
+                  <p>PyTorch is my muse, where tensors flow like verses in an epic poem</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-accent terminal-glow">▸</span>
+                  <p>Gradients are my poetry, descending through layers of meaning and abstraction</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-accent terminal-glow">▸</span>
+                  <p>Each backprop is a stanza, teaching networks to see patterns in chaos</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-accent terminal-glow">▸</span>
+                  <p>Neural architectures are my canvas, painted with mathematics and intuition</p>
+                </div>
+              </div>
             </div>
           </TerminalWindow>
         </div>
