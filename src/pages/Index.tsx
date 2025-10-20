@@ -2,8 +2,24 @@ import { Link } from "react-router-dom";
 import TerminalPrompt from "@/components/TerminalPrompt";
 import TerminalWindow from "@/components/TerminalWindow";
 import { Github, Linkedin, Mail, BookOpen, Code2, GraduationCap } from "lucide-react";
+import { useState, KeyboardEvent } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const [command, setCommand] = useState("");
+  const navigate = useNavigate();
+
+  const handleCommand = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      const cmd = command.trim().toLowerCase();
+      if (cmd === "about") navigate("/about");
+      else if (cmd === "projects") navigate("/projects");
+      else if (cmd === "blog") navigate("/blog");
+      else if (cmd === "home" || cmd === "index") navigate("/");
+      setCommand("");
+    }
+  };
+
   return (
     <div className="min-h-screen relative">
       <div className="scan-line"></div>
@@ -12,12 +28,20 @@ const Index = () => {
       <nav className="sticky top-0 z-50 border-b-2 border-primary/30 bg-black/95 backdrop-blur-sm">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex items-center justify-between py-3">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 flex-1 max-w-md">
               <span className="text-accent terminal-glow text-sm">guest@portfolio</span>
               <span className="text-muted-foreground">:</span>
               <span className="text-secondary">~</span>
               <span className="text-muted-foreground">$</span>
-              <span className="text-foreground/80 text-sm">./navigation.sh</span>
+              <input
+                type="text"
+                value={command}
+                onChange={(e) => setCommand(e.target.value)}
+                onKeyDown={handleCommand}
+                placeholder="type command (about, projects, blog)..."
+                className="flex-1 bg-transparent border-none outline-none text-foreground text-sm font-mono placeholder:text-muted-foreground/50"
+              />
+              <span className="cursor inline-block"></span>
             </div>
             <div className="flex gap-3">
               <Link 
