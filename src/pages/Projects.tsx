@@ -5,36 +5,20 @@ import { ArrowLeft, ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "AutoNAS: Neural Architecture Search Framework",
-    description: "Open-source framework for automated neural architecture search with support for multiple search strategies including RL, evolutionary algorithms, and DARTS.",
-    tech: ["Python", "PyTorch", "Ray"],
-    github: "https://github.com",
+    title: "AutoDLTorch: Bare Bones PyTorch Implementation",
+    description: "Open-source framework for training and finetuning different DL archs w different optimisations",
+    tech: ["Python", "PyTorch", "HuggingFace"],
+    github: "https://github.com/gjyotin305/AutoDLTorch",
     demo: null,
-    metrics: "10x faster than previous NAS methods"
+    metrics: "more stable than trl xdxd"
   },
   {
-    title: "EdgeML: Efficient Models for Edge Devices",
-    description: "Toolkit for optimizing and deploying ML models on resource-constrained edge devices through quantization, pruning, and knowledge distillation.",
-    tech: ["C++", "ONNX", "TensorRT"],
-    github: "https://github.com",
-    demo: "https://demo.com",
-    metrics: "5x latency reduction, 80% size reduction"
-  },
-  {
-    title: "FedLearn: Privacy-Preserving ML Platform",
-    description: "Production-ready federated learning system supporting multiple aggregation strategies, differential privacy, and secure multi-party computation.",
-    tech: ["Python", "gRPC", "Kubernetes"],
-    github: "https://github.com",
+    title: "Model Editing",
+    description: "Toolkit for editing factual knowledge in llms using locate and edit methods along with MoE based external memory adapter methods",
+    tech: ["PyTorch"],
+    github: "https://github.com/gjyotin305/ModelEdit-Benchmark",
     demo: null,
-    metrics: "1000+ concurrent clients, <100ms latency"
-  },
-  {
-    title: "TransformerOpt: LLM Optimization Suite",
-    description: "Comprehensive toolkit for optimizing transformer models including Flash Attention implementation, multi-query attention, and efficient inference kernels.",
-    tech: ["CUDA", "PyTorch", "Triton"],
-    github: "https://github.com",
-    demo: null,
-    metrics: "3x faster inference, 40% memory reduction"
+    metrics: "More robust than ROME and works for longer sequences as well."
   }
 ];
 
@@ -103,21 +87,9 @@ const Projects = () => {
                 <div className="space-y-4">
                   <div className="text-foreground/80">
                     <p className="font-semibold text-primary">
-                      "Efficient Neural Architecture Search via Parameter Sharing"
+                      "A Traditional Approach to Symbolic Piano Continuation"
                     </p>
-                    <p className="text-sm text-muted-foreground">NeurIPS 2024 • 150+ citations</p>
-                  </div>
-                  <div className="text-foreground/80">
-                    <p className="font-semibold text-primary">
-                      "FedOpt: Federated Learning with Adaptive Optimization"
-                    </p>
-                    <p className="text-sm text-muted-foreground">ICML 2023 • 200+ citations</p>
-                  </div>
-                  <div className="text-foreground/80">
-                    <p className="font-semibold text-primary">
-                      "Transformer Compression via Structured Pruning"
-                    </p>
-                    <p className="text-sm text-muted-foreground">ICLR 2023 • 180+ citations</p>
+                    <p className="text-sm text-muted-foreground">MIREX 2025</p>
                   </div>
                 </div>
               </div>
