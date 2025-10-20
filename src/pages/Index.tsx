@@ -110,7 +110,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-accent terminal-glow">▸</span>
-                  <p>RWKV is my current curiosity, exploring its rhythm and memory</p>
+                  <p>RWKV is my current curiosity, exploring its recurrent arch.</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-accent terminal-glow">▸</span>
