@@ -78,10 +78,10 @@ const Index = () => {
                 <TerminalPrompt command="./introduce.sh" />
                 <div className="ml-6 space-y-3">
                   <h1 className="text-2xl md:text-3xl font-normal text-foreground/90">
-                    ml researcher
+                    ml engineer
                   </h1>
                   <p className="text-sm text-muted-foreground">
-                    deep learning / neural architecture / ai systems
+                    deep learning / natural language processing / ai systems
                   </p>
                 </div>
               </div>
@@ -98,23 +98,23 @@ const Index = () => {
         <div className="mb-12">
           <TerminalWindow title="~/intro.log">
             <div className="space-y-4">
-              <TerminalPrompt command="cat philosophy.txt" />
+              <TerminalPrompt command="cat blabber.txt" />
               <div className="ml-6 space-y-3 text-foreground/90">
                 <div className="flex items-start gap-3">
                   <span className="text-accent terminal-glow">▸</span>
-                  <p>PyTorch is my muse, where tensors flow like verses in an epic poem</p>
+                  <p>PyTorch is my go-to playground, where training loops feel like second nature</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-accent terminal-glow">▸</span>
-                  <p>Gradients are my poetry, descending through layers of meaning and abstraction</p>
+                  <p>XGBoost? Sometimes all you really need to get things done</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-accent terminal-glow">▸</span>
-                  <p>Each backprop is a stanza, teaching networks to see patterns in chaos</p>
+                  <p>RWKV is my current curiosity, exploring its rhythm and memory</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-accent terminal-glow">▸</span>
-                  <p>Neural architectures are my canvas, painted with mathematics and intuition</p>
+                  <p>Attention: is it really all you need, or is there a horizon beyond the transformer?</p>
                 </div>
               </div>
             </div>
@@ -125,33 +125,15 @@ const Index = () => {
         <div className="mb-12">
           <TerminalWindow title="~/experience.log">
             <div className="space-y-6">
-              <TerminalPrompt command="cat work_history.txt" />
-              <div className="ml-6 space-y-6">
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2">
-                    <span className="text-accent terminal-glow">▸</span>
-                    <h3 className="text-lg font-semibold text-foreground">Senior ML Researcher</h3>
-                  </div>
-                  <p className="text-sm text-muted-foreground ml-4">AI Research Lab • 2022 - Present</p>
-                  <p className="text-foreground/80 ml-4">Leading neural architecture search and transformer optimization research</p>
-                </div>
-                
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2">
-                    <span className="text-accent terminal-glow">▸</span>
-                    <h3 className="text-lg font-semibold text-foreground">ML Engineer</h3>
-                  </div>
-                  <p className="text-sm text-muted-foreground ml-4">Tech Company • 2020 - 2022</p>
-                  <p className="text-foreground/80 ml-4">Developed production-scale deep learning systems and optimized inference pipelines</p>
-                </div>
-                
+              <TerminalPrompt command="cat current_work.txt" />
+              <div className="ml-6 space-y-6">                
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <span className="text-accent terminal-glow">▸</span>
                     <h3 className="text-lg font-semibold text-foreground">Research Intern</h3>
                   </div>
-                  <p className="text-sm text-muted-foreground ml-4">University Lab • 2019 - 2020</p>
-                  <p className="text-foreground/80 ml-4">Explored federated learning approaches for privacy-preserving AI</p>
+                  <p className="text-sm text-muted-foreground ml-4">Sony Research India • May 2025 - Present</p>
+                  <p className="text-foreground/80 ml-4">learning to do research.</p>
                 </div>
               </div>
             </div>
@@ -163,20 +145,20 @@ const Index = () => {
           <div className="space-y-4">
             <TerminalPrompt command="cat contact.txt" />
             <div className="ml-6 space-y-3">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
+              <a href="https://github.com/gjyotin305" target="_blank" rel="noopener noreferrer" 
                  className="flex items-center gap-3 text-foreground/80 hover:text-accent transition-colors">
                 <Github className="w-5 h-5" />
-                <span className="terminal-glow">github.com/researcher</span>
+                <span className="terminal-glow">github.com/gjyotin305</span>
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.linkedin.com/in/jyotin-goel-16924b263/" target="_blank" rel="noopener noreferrer"
                  className="flex items-center gap-3 text-foreground/80 hover:text-accent transition-colors">
                 <Linkedin className="w-5 h-5" />
-                <span className="terminal-glow">linkedin.com/in/researcher</span>
+                <span className="terminal-glow">linkedin.com/in/jyotin</span>
               </a>
-              <a href="mailto:research@example.com"
+              <a href="mailto:b22ai063@iitj.ac.in"
                  className="flex items-center gap-3 text-foreground/80 hover:text-accent transition-colors">
                 <Mail className="w-5 h-5" />
-                <span className="terminal-glow">research@example.com</span>
+                <span className="terminal-glow">b22ai063@iitj.ac.in</span>
               </a>
             </div>
           </div>

@@ -22,14 +22,12 @@ const About = () => {
                 <h1 className="text-3xl font-bold text-accent terminal-glow mb-4">About Me</h1>
                 
                 <p className="text-foreground/90 leading-relaxed">
-                  I'm a machine learning researcher and engineer specializing in neural architecture search, 
-                  deep learning optimization, and large-scale AI systems. My work focuses on making advanced 
-                  ML techniques more efficient, accessible, and practical for real-world applications.
+                 Hey, I’m Jyotin. I mess around with machine learning and NLP, fiddle with deep learning optimization, and train large models in GPU poor envs. 
+                 Basically, I train models and see what happens.
                 </p>
 
                 <p className="text-foreground/90 leading-relaxed">
-                  Currently researching automated machine learning (AutoML) and neural architecture optimization, 
-                  with a particular interest in making AI more energy-efficient and deployable on edge devices.
+                  I am currently working in aligning large language models to different domains/tasks.
                 </p>
               </div>
             </div>
@@ -41,23 +39,15 @@ const About = () => {
                 <ul className="space-y-2 text-foreground/80">
                   <li className="flex items-start gap-2">
                     <span className="text-primary">▸</span>
-                    <span>Neural Architecture Search & AutoML</span>
+                    <span>Natural Language Processing</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary">▸</span>
-                    <span>Transformer Model Optimization</span>
+                    <span>Distributed Training & Inference</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary">▸</span>
-                    <span>Federated & Privacy-Preserving ML</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary">▸</span>
-                    <span>Large Language Model Deployment</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary">▸</span>
-                    <span>Edge AI & Model Compression</span>
+                    <span>Model Editing</span>
                   </li>
                 </ul>
               </div>
@@ -69,14 +59,9 @@ const About = () => {
                 <h2 className="text-xl font-bold text-accent mb-3">Education</h2>
                 <div className="space-y-4">
                   <div>
-                    <h3 className="text-lg font-semibold text-primary">Ph.D. in Computer Science</h3>
-                    <p className="text-muted-foreground">Focus: Neural Architecture Search</p>
-                    <p className="text-sm text-muted-foreground">2020 - 2024</p>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-primary">M.S. in Machine Learning</h3>
-                    <p className="text-muted-foreground">Thesis: Efficient Transformer Architectures</p>
-                    <p className="text-sm text-muted-foreground">2018 - 2020</p>
+                    <h3 className="text-lg font-semibold text-primary">B.Tech in AI and Data Science</h3>
+                    <p className="text-muted-foreground">IIT Jodhpur</p>
+                    <p className="text-sm text-muted-foreground">2022 - 2026</p>
                   </div>
                 </div>
               </div>
@@ -89,15 +74,15 @@ const About = () => {
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <h3 className="text-primary font-semibold mb-2">Languages</h3>
-                    <p className="text-foreground/80">Python, C++, Julia, CUDA</p>
+                    <p className="text-foreground/80">Python, C++, Golang</p>
                   </div>
                   <div>
                     <h3 className="text-primary font-semibold mb-2">Frameworks</h3>
-                    <p className="text-foreground/80">PyTorch, TensorFlow, JAX, ONNX</p>
+                    <p className="text-foreground/80">PyTorch, PyTorch-Lightning, HuggingFace TRL</p>
                   </div>
                   <div>
                     <h3 className="text-primary font-semibold mb-2">Tools</h3>
-                    <p className="text-foreground/80">Docker, Kubernetes, Ray, Weights & Biases</p>
+                    <p className="text-foreground/80">Docker, Ray, Weights & Biases</p>
                   </div>
                   <div>
                     <h3 className="text-primary font-semibold mb-2">Cloud</h3>
