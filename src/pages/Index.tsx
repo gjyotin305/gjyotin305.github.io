@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import TerminalPrompt from "@/components/TerminalPrompt";
 import TerminalWindow from "@/components/TerminalWindow";
+import FlowAnimation from "@/components/FlowAnimation";
 import { Github, Linkedin, Mail, BookOpen, Code2, GraduationCap, Twitter } from "lucide-react";
 import { useState, KeyboardEvent } from "react";
 import { useNavigate } from "react-router-dom";
@@ -8,6 +9,7 @@ import profilePic from "@/assets/tron-ichigo.jpg";
 
 const Index = () => {
   const [command, setCommand] = useState("");
+  const [showFlow, setShowFlow] = useState(false);
   const navigate = useNavigate();
 
   const handleCommand = (e: KeyboardEvent<HTMLInputElement>) => {
@@ -17,12 +19,16 @@ const Index = () => {
       else if (cmd === "projects") navigate("/projects");
       else if (cmd === "blog") navigate("/blog");
       else if (cmd === "home" || cmd === "index") navigate("/");
+      else if (cmd === "flow") {
+        setShowFlow(!showFlow);
+      }
       setCommand("");
     }
   };
 
   return (
     <div className="min-h-screen relative">
+      <FlowAnimation isActive={showFlow} />
       {/* Navigation Bar */}
       <nav className="sticky top-0 z-50 border-b-2 border-primary/30 bg-black/95 backdrop-blur-sm">
         <div className="container mx-auto px-4 max-w-6xl">
