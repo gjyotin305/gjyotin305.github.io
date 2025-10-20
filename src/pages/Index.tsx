@@ -77,10 +77,16 @@ const Index = () => {
               <div className="space-y-3 sm:space-y-4 flex-1 text-center sm:text-left">
                 <TerminalPrompt command="./introduce.sh" />
                 <div className="sm:ml-6 space-y-2 sm:space-y-3">
-                  <h1 className="text-xl sm:text-2xl md:text-3xl font-normal text-foreground/90">
-                    ml engineer
+                  <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-accent terminal-glow">
+                    Jyotin Goel
                   </h1>
-                  <p className="text-xs sm:text-sm text-muted-foreground">
+                  <p className="text-base sm:text-lg md:text-xl text-foreground/90 font-semibold">
+                    ml engineer
+                  </p>
+                  <p className="text-xs sm:text-sm text-muted-foreground italic">
+                    // breaking models, training patience, and occasionally debugging life
+                  </p>
+                  <p className="text-xs sm:text-sm text-primary/80">
                     deep learning / natural language processing / ai systems
                   </p>
                 </div>
