@@ -52,12 +52,12 @@ const Index = () => {
           <TerminalWindow title="~/welcome.sh">
             <div className="space-y-4">
               <TerminalPrompt command="./introduce.sh" />
-              <div className="ml-6 space-y-2">
-                <h1 className="text-4xl md:text-6xl font-bold text-accent terminal-glow animate-fade-in">
-                  ML RESEARCHER
+              <div className="ml-6 space-y-3">
+                <h1 className="text-2xl md:text-3xl font-normal text-foreground/90">
+                  ml researcher
                 </h1>
-                <p className="text-xl text-foreground/80">
-                  <span className="text-primary">$</span> Deep Learning • Neural Architecture • AI Systems
+                <p className="text-sm text-muted-foreground">
+                  deep learning / neural architecture / ai systems
                 </p>
               </div>
             </div>
