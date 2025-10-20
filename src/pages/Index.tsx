@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import TerminalPrompt from "@/components/TerminalPrompt";
 import TerminalWindow from "@/components/TerminalWindow";
 import { Github, Linkedin, Mail, BookOpen, Code2, GraduationCap } from "lucide-react";
+import neonMascot from "@/assets/neon-mascot.jpg";
 
 const Index = () => {
   return (
@@ -63,6 +64,22 @@ const Index = () => {
             </div>
           </TerminalWindow>
         </header>
+
+        {/* Neon Mascot Section */}
+        <div className="mb-12">
+          <TerminalWindow title="~/mascot.display">
+            <div className="space-y-4">
+              <TerminalPrompt command="display neon_sign.png" />
+              <div className="ml-6 flex justify-center">
+                <img 
+                  src={neonMascot} 
+                  alt="Neon AI Robot Mascot"
+                  className="rounded-lg max-w-md w-full h-auto terminal-glow animate-fade-in"
+                />
+              </div>
+            </div>
+          </TerminalWindow>
+        </div>
 
         {/* Intro Section */}
         <div className="mb-12">
