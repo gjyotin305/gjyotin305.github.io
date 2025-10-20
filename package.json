@@ -1,11 +1,14 @@
 {
   "name": "vite_react_shadcn_ts",
   "private": true,
+  "homepage": "https://gjyotin305.github.io",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -b gh-push-2 -d dist",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
