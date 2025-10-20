@@ -23,8 +23,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen relative">
-      <div className="scan-line"></div>
-      
       {/* Navigation Bar */}
       <nav className="sticky top-0 z-50 border-b-2 border-primary/30 bg-black/95 backdrop-blur-sm">
         <div className="container mx-auto px-4 max-w-6xl">
