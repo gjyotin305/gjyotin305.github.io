@@ -91,6 +91,43 @@ const Index = () => {
           </TerminalWindow>
         </div>
 
+        {/* Work Experience */}
+        <div className="mb-12">
+          <TerminalWindow title="~/experience.log">
+            <div className="space-y-6">
+              <TerminalPrompt command="cat work_history.txt" />
+              <div className="ml-6 space-y-6">
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <span className="text-accent terminal-glow">▸</span>
+                    <h3 className="text-lg font-semibold text-foreground">Senior ML Researcher</h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground ml-4">AI Research Lab • 2022 - Present</p>
+                  <p className="text-foreground/80 ml-4">Leading neural architecture search and transformer optimization research</p>
+                </div>
+                
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <span className="text-accent terminal-glow">▸</span>
+                    <h3 className="text-lg font-semibold text-foreground">ML Engineer</h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground ml-4">Tech Company • 2020 - 2022</p>
+                  <p className="text-foreground/80 ml-4">Developed production-scale deep learning systems and optimized inference pipelines</p>
+                </div>
+                
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <span className="text-accent terminal-glow">▸</span>
+                    <h3 className="text-lg font-semibold text-foreground">Research Intern</h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground ml-4">University Lab • 2019 - 2020</p>
+                  <p className="text-foreground/80 ml-4">Explored federated learning approaches for privacy-preserving AI</p>
+                </div>
+              </div>
+            </div>
+          </TerminalWindow>
+        </div>
+
         {/* Contact */}
         <TerminalWindow title="~/contact.sh">
           <div className="space-y-4">
