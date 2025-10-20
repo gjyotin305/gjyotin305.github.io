@@ -59,7 +59,6 @@ const About = () => {
                 <h2 className="text-xl font-bold text-accent mb-3">Work Experience</h2>
                 <div className="space-y-6">
                   <div>
-                  <div className="mb4">
                     <h3 className="text-lg font-semibold text-primary">Research Intern</h3>
                     <p className="text-muted-foreground">Sony Research India</p>
                     <p className="text-sm text-muted-foreground">May 2025 - Present</p>
@@ -68,7 +67,7 @@ const About = () => {
                     </p>
                   </div>
 
-                  <div className="mb-4">
+                  <div>
                     <h3 className="text-lg font-semibold text-primary">Voice AI Intern</h3>
                     <p className="text-muted-foreground">Chat360</p>
                     <p className="text-sm text-muted-foreground">Feb 2024 - Jul 2024</p>
@@ -77,16 +76,14 @@ const About = () => {
                     </p>
                   </div>
 
-                  <div className="mb-4">
+                  <div>
                     <h3 className="text-lg font-semibold text-primary">Research Intern</h3>
                     <p className="text-muted-foreground">AIISC</p>
-                    <p className="text-sm text-muted-foreground">Jun 2024 - August 2025 </p>
+                    <p className="text-sm text-muted-foreground">Jun 2024 - August 2025</p>
                     <p className="text-foreground/80 mt-2">
                       Made a MoE external adapter based knowledge editing mechanism for LLMs, works best on long sequences.
                     </p>
                   </div>
-                </div>
-
                 </div>
               </div>
             </div>
