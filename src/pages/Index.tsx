@@ -42,27 +42,30 @@ const Index = () => {
               />
               <span className="cursor inline-block"></span>
             </div>
-            <div className="flex gap-3">
+            <div className="flex gap-6">
               <Link 
                 to="/about"
-                className="flex items-center gap-2 px-3 py-1.5 text-sm border border-primary/30 rounded hover:border-primary hover:bg-primary/10 transition-all terminal-glow"
+                className="flex items-center gap-2 text-sm text-foreground/70 hover:text-accent transition-colors relative group"
               >
                 <GraduationCap className="w-4 h-4" />
                 <span>about</span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link 
                 to="/projects"
-                className="flex items-center gap-2 px-3 py-1.5 text-sm border border-primary/30 rounded hover:border-primary hover:bg-primary/10 transition-all terminal-glow"
+                className="flex items-center gap-2 text-sm text-foreground/70 hover:text-accent transition-colors relative group"
               >
                 <Code2 className="w-4 h-4" />
                 <span>projects</span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link 
                 to="/blog"
-                className="flex items-center gap-2 px-3 py-1.5 text-sm border border-primary/30 rounded hover:border-primary hover:bg-primary/10 transition-all terminal-glow"
+                className="flex items-center gap-2 text-sm text-foreground/70 hover:text-accent transition-colors relative group"
               >
                 <BookOpen className="w-4 h-4" />
                 <span>blog</span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"></span>
               </Link>
             </div>
           </div>
