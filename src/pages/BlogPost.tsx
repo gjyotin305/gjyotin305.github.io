@@ -14,7 +14,7 @@ const BlogPost = () => {
 
   useEffect(() => {
     if (post) {
-      fetch(`/src/data/blogs/${post.fileName}`)
+      fetch(`/blogs/${post.fileName}`)
         .then(res => res.text())
         .then(text => setContent(text))
         .catch(err => console.error("Error loading blog post:", err));
