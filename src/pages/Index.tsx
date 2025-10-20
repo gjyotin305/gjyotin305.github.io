@@ -4,7 +4,7 @@ import TerminalWindow from "@/components/TerminalWindow";
 import { Github, Linkedin, Mail, BookOpen, Code2, GraduationCap } from "lucide-react";
 import { useState, KeyboardEvent } from "react";
 import { useNavigate } from "react-router-dom";
-import profilePic from "@/assets/profile-pic.jpg";
+import profilePic from "@/assets/tron-profile.jpg";
 
 const Index = () => {
   const [command, setCommand] = useState("");
