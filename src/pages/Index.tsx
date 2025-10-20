@@ -177,8 +177,12 @@ const Index = () => {
         </TerminalWindow>
 
         {/* Footer */}
-        <footer className="mt-16 text-center text-sm text-muted-foreground">
+        <footer className="mt-16 text-center space-y-2">
           <TerminalPrompt command="echo 'Building the future with AI'" />
+          <div className="text-xs text-muted-foreground/60 pt-4 border-t border-primary/20 mt-6">
+            <p>© 2025 ML Researcher. All rights reserved.</p>
+            <p className="mt-1">Last updated: October 2025</p>
+          </div>
         </footer>
       </div>
     </div>
