@@ -155,10 +155,10 @@ const Index = () => {
                 <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
                 <span className="terminal-glow break-all">linkedin.com/in/jyotin</span>
               </a>
-              <a href="https://twitter.com/gjyotin305" target="_blank" rel="noopener noreferrer"
+              <a href="https://x.com/GoelJyotin94856" target="_blank" rel="noopener noreferrer"
                  className="flex items-center gap-2 sm:gap-3 text-foreground/80 hover:text-accent transition-colors text-sm sm:text-base">
                 <Twitter className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
-                <span className="terminal-glow break-all">twitter.com/gjyotin305</span>
+                <span className="terminal-glow break-all">x.com/GoelJyotin94856</span>
               </a>
               <a href="mailto:b22ai063@iitj.ac.in"
                  className="flex items-center gap-2 sm:gap-3 text-foreground/80 hover:text-accent transition-colors text-sm sm:text-base">
