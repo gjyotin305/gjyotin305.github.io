@@ -4,6 +4,7 @@ import TerminalWindow from "@/components/TerminalWindow";
 import { Github, Linkedin, Mail, BookOpen, Code2, GraduationCap } from "lucide-react";
 import { useState, KeyboardEvent } from "react";
 import { useNavigate } from "react-router-dom";
+import profilePic from "@/assets/profile-pic.jpg";
 
 const Index = () => {
   const [command, setCommand] = useState("");
@@ -74,16 +75,23 @@ const Index = () => {
         {/* Header */}
         <header className="mb-16">
           <TerminalWindow title="~/welcome.sh">
-            <div className="space-y-4">
-              <TerminalPrompt command="./introduce.sh" />
-              <div className="ml-6 space-y-3">
-                <h1 className="text-2xl md:text-3xl font-normal text-foreground/90">
-                  ml researcher
-                </h1>
-                <p className="text-sm text-muted-foreground">
-                  deep learning / neural architecture / ai systems
-                </p>
+            <div className="flex items-center justify-between gap-8">
+              <div className="space-y-4 flex-1">
+                <TerminalPrompt command="./introduce.sh" />
+                <div className="ml-6 space-y-3">
+                  <h1 className="text-2xl md:text-3xl font-normal text-foreground/90">
+                    ml researcher
+                  </h1>
+                  <p className="text-sm text-muted-foreground">
+                    deep learning / neural architecture / ai systems
+                  </p>
+                </div>
               </div>
+              <img 
+                src={profilePic} 
+                alt="Profile"
+                className="w-24 h-24 md:w-32 md:h-32 rounded-full border-2 border-primary/30 object-cover"
+              />
             </div>
           </TerminalWindow>
         </header>
