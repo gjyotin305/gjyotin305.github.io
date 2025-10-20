@@ -42,30 +42,27 @@ const Index = () => {
               />
               <span className="cursor inline-block"></span>
             </div>
-            <div className="flex gap-6">
+            <div className="flex gap-3">
               <Link 
                 to="/about"
-                className="flex items-center gap-2 text-sm text-foreground/70 hover:text-accent transition-colors relative group"
+                className="flex items-center gap-2 px-3 py-1.5 text-sm border border-primary/30 rounded hover:border-primary hover:bg-primary/10 transition-all terminal-glow"
               >
                 <GraduationCap className="w-4 h-4" />
                 <span>about</span>
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link 
                 to="/projects"
-                className="flex items-center gap-2 text-sm text-foreground/70 hover:text-accent transition-colors relative group"
+                className="flex items-center gap-2 px-3 py-1.5 text-sm border border-primary/30 rounded hover:border-primary hover:bg-primary/10 transition-all terminal-glow"
               >
                 <Code2 className="w-4 h-4" />
                 <span>projects</span>
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link 
                 to="/blog"
-                className="flex items-center gap-2 text-sm text-foreground/70 hover:text-accent transition-colors relative group"
+                className="flex items-center gap-2 px-3 py-1.5 text-sm border border-primary/30 rounded hover:border-primary hover:bg-primary/10 transition-all terminal-glow"
               >
                 <BookOpen className="w-4 h-4" />
                 <span>blog</span>
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"></span>
               </Link>
             </div>
           </div>
@@ -75,16 +72,18 @@ const Index = () => {
       <div className="relative z-10 container mx-auto px-4 py-12 max-w-6xl">
         {/* Header */}
         <header className="mb-16">
-          <div className="border-l-2 border-accent/50 pl-6 py-4">
-            <TerminalPrompt command="./introduce.sh" />
-            <div className="flex items-center justify-between gap-8 mt-4">
-              <div className="space-y-3 flex-1">
-                <h1 className="text-2xl md:text-3xl font-normal text-foreground/90">
-                  ml researcher
-                </h1>
-                <p className="text-sm text-muted-foreground">
-                  deep learning / neural architecture / ai systems
-                </p>
+          <TerminalWindow title="~/welcome.sh">
+            <div className="flex items-center justify-between gap-8">
+              <div className="space-y-4 flex-1">
+                <TerminalPrompt command="./introduce.sh" />
+                <div className="ml-6 space-y-3">
+                  <h1 className="text-2xl md:text-3xl font-normal text-foreground/90">
+                    ml researcher
+                  </h1>
+                  <p className="text-sm text-muted-foreground">
+                    deep learning / neural architecture / ai systems
+                  </p>
+                </div>
               </div>
               <img 
                 src={profilePic} 
@@ -92,74 +91,78 @@ const Index = () => {
                 className="w-24 h-24 md:w-32 md:h-32 rounded-full border-2 border-primary/30 object-cover"
               />
             </div>
-          </div>
+          </TerminalWindow>
         </header>
 
         {/* Intro Section */}
         <div className="mb-12">
-          <div className="border-l-2 border-accent/50 pl-6 py-4">
-            <TerminalPrompt command="cat philosophy.txt" />
-            <div className="mt-4 space-y-3 text-foreground/90">
-              <div className="flex items-start gap-3">
-                <span className="text-accent terminal-glow">▸</span>
-                <p>PyTorch is my muse, where tensors flow like verses in an epic poem</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-accent terminal-glow">▸</span>
-                <p>Gradients are my poetry, descending through layers of meaning and abstraction</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-accent terminal-glow">▸</span>
-                <p>Each backprop is a stanza, teaching networks to see patterns in chaos</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-accent terminal-glow">▸</span>
-                <p>Neural architectures are my canvas, painted with mathematics and intuition</p>
+          <TerminalWindow title="~/intro.log">
+            <div className="space-y-4">
+              <TerminalPrompt command="cat philosophy.txt" />
+              <div className="ml-6 space-y-3 text-foreground/90">
+                <div className="flex items-start gap-3">
+                  <span className="text-accent terminal-glow">▸</span>
+                  <p>PyTorch is my muse, where tensors flow like verses in an epic poem</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-accent terminal-glow">▸</span>
+                  <p>Gradients are my poetry, descending through layers of meaning and abstraction</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-accent terminal-glow">▸</span>
+                  <p>Each backprop is a stanza, teaching networks to see patterns in chaos</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-accent terminal-glow">▸</span>
+                  <p>Neural architectures are my canvas, painted with mathematics and intuition</p>
+                </div>
               </div>
             </div>
-          </div>
+          </TerminalWindow>
         </div>
 
         {/* Work Experience */}
         <div className="mb-12">
-          <div className="border-l-2 border-accent/50 pl-6 py-4">
-            <TerminalPrompt command="cat work_history.txt" />
-            <div className="mt-4 space-y-6">
-              <div className="space-y-2">
-                <div className="flex items-center gap-2">
-                  <span className="text-accent terminal-glow">▸</span>
-                  <h3 className="text-lg font-semibold text-foreground">Senior ML Researcher</h3>
+          <TerminalWindow title="~/experience.log">
+            <div className="space-y-6">
+              <TerminalPrompt command="cat work_history.txt" />
+              <div className="ml-6 space-y-6">
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <span className="text-accent terminal-glow">▸</span>
+                    <h3 className="text-lg font-semibold text-foreground">Senior ML Researcher</h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground ml-4">AI Research Lab • 2022 - Present</p>
+                  <p className="text-foreground/80 ml-4">Leading neural architecture search and transformer optimization research</p>
                 </div>
-                <p className="text-sm text-muted-foreground ml-4">AI Research Lab • 2022 - Present</p>
-                <p className="text-foreground/80 ml-4">Leading neural architecture search and transformer optimization research</p>
-              </div>
-              
-              <div className="space-y-2">
-                <div className="flex items-center gap-2">
-                  <span className="text-accent terminal-glow">▸</span>
-                  <h3 className="text-lg font-semibold text-foreground">ML Engineer</h3>
+                
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <span className="text-accent terminal-glow">▸</span>
+                    <h3 className="text-lg font-semibold text-foreground">ML Engineer</h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground ml-4">Tech Company • 2020 - 2022</p>
+                  <p className="text-foreground/80 ml-4">Developed production-scale deep learning systems and optimized inference pipelines</p>
                 </div>
-                <p className="text-sm text-muted-foreground ml-4">Tech Company • 2020 - 2022</p>
-                <p className="text-foreground/80 ml-4">Developed production-scale deep learning systems and optimized inference pipelines</p>
-              </div>
-              
-              <div className="space-y-2">
-                <div className="flex items-center gap-2">
-                  <span className="text-accent terminal-glow">▸</span>
-                  <h3 className="text-lg font-semibold text-foreground">Research Intern</h3>
+                
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <span className="text-accent terminal-glow">▸</span>
+                    <h3 className="text-lg font-semibold text-foreground">Research Intern</h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground ml-4">University Lab • 2019 - 2020</p>
+                  <p className="text-foreground/80 ml-4">Explored federated learning approaches for privacy-preserving AI</p>
                 </div>
-                <p className="text-sm text-muted-foreground ml-4">University Lab • 2019 - 2020</p>
-                <p className="text-foreground/80 ml-4">Explored federated learning approaches for privacy-preserving AI</p>
               </div>
             </div>
-          </div>
+          </TerminalWindow>
         </div>
 
         {/* Contact */}
-        <div className="mb-12">
-          <div className="border-l-2 border-accent/50 pl-6 py-4">
+        <TerminalWindow title="~/contact.sh">
+          <div className="space-y-4">
             <TerminalPrompt command="cat contact.txt" />
-            <div className="mt-4 space-y-3">
+            <div className="ml-6 space-y-3">
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
                  className="flex items-center gap-3 text-foreground/80 hover:text-accent transition-colors">
                 <Github className="w-5 h-5" />
@@ -177,7 +180,7 @@ const Index = () => {
               </a>
             </div>
           </div>
-        </div>
+        </TerminalWindow>
 
         {/* Footer */}
         <footer className="mt-16 text-center space-y-2">
