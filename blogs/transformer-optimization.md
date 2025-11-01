@@ -4,6 +4,9 @@ Hellooo, so this is my first blog, I wanted to make this on some of the optimiza
 
 This blog will not have a definite structure, each optimisation can be applied independently and sequentially as well
 
+(PS: The code needs a lot of cleaning, but has the implementations lined up and commented.)
+[Github](https://github.com/gjyotin305/AutoDLTorch/blob/main/automodel_train/lit_train_loop.py)
+
 
 ## Index
     - `LoRA`
