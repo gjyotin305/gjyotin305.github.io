@@ -10,8 +10,8 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: "transformer-optimization",
-    title: "Coming soon..",
-    date: "2024-02-20",
+    title: "Efficient Training for Deep Learning Models",
+    date: "2025-11-02",
     tags: ["PyTorch", "LLMs", "Training"],
     excerpt: "Good Training Practices",
     fileName: "transformer-optimization.md"
