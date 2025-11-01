@@ -14,7 +14,7 @@ This blog will not have a definite structure, each optimisation can be applied i
 
 ### LoRA (Low Rank Adapters):
 
-<u>*Intuition:*</u>
+*Intuition:*
 
 In this day and age, where models are humongous in billions and trillions of parameters, Full Finetuning is not considered Ideal. Thus, came LoRA this technique changes the finetuning process very simply.
 
@@ -36,7 +36,7 @@ W_updated = W + ΔW = W + A.B
 The amount of parameters being updated previously were let us assume W being 20,000 x 80,000, were 16 * 10^8 and post LoRA
 with r, it comes down to 20,000 * r + 80,000 * r, now as we can see the the number of parameters being updated has come down a lot, which brings down the VRAM consumption by a lot.
 
-<u>*Implementation (taken for @rasbt github) for LLMs:*</u>
+*Implementation (taken for @rasbt github) for LLMs:*
 
 ```python
 class LoRALayer(torch.nn.Module):
@@ -81,7 +81,6 @@ Alpha here is taken with (α = 2 * r)
 Free VRAM more or less
 
 
-#### Intuition
-
+<u>*Intuition:*</u>
 
 
