@@ -149,8 +149,6 @@ With just LoRA and Gradient Checkpointing without quantizing our model we are ab
 (Coming Sooonn) WIP
 
 ### References
-
-### References
 1. [LoRA: Low Rank Adaptation of Large Language Models](https://medium.com/@tayyibgondal2003/loralow-rank-adaptation-of-large-language-models-33f9d9d48984)  
 2. [Code LoRA from scratch](https://lightning.ai/lightning-ai/environments/code-lora-from-scratch?view=public&section=featured)   
 3. [Gradient Checkpointing Animations](https://github.com/cybertronai/gradient-checkpointing)
