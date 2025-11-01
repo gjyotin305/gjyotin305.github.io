@@ -1,4 +1,4 @@
-# A Hitchhiker’s Guide to Training Deep Learning Models
+## A Hitchhiker’s Guide to Training Deep Learning Models
 
 Hellooo, so this is my first blog, I wanted to make this on some of the optimizations that I came across mainly via unsloth, and from my experience of pretraining/finetuning big models in a GPU poor environment.
 
