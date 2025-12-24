@@ -87,13 +87,10 @@ const Index = () => {
                     Jyotin Goel
                   </h1>
                   <p className="text-base sm:text-lg md:text-xl text-foreground/90 font-semibold">
-                    ml engineer
-                  </p>
-                  <p className="text-xs sm:text-sm text-muted-foreground italic">
-                    // breaking models, training patience, and occasionally debugging life
+                    Machine Learning Engineer
                   </p>
                   <p className="text-xs sm:text-sm text-primary/80">
-                    deep learning / natural language processing / ai systems
+                    Deep Learning • Natural Language Processing • AI Systems
                   </p>
                 </div>
               </div>
@@ -106,47 +103,42 @@ const Index = () => {
           </TerminalWindow>
         </header>
 
-        {/* Intro Section */}
+        {/* Welcome Section */}
         <div className="mb-8 sm:mb-10 md:mb-12">
-          <TerminalWindow title="~/intro.log">
-            <div className="space-y-3 sm:space-y-4">
-              <TerminalPrompt command="cat blabber.txt" />
-              <div className="sm:ml-6 space-y-2 sm:space-y-3 text-sm sm:text-base text-foreground/90">
-                <div className="flex items-start gap-2 sm:gap-3">
-                  <span className="text-accent terminal-glow shrink-0">▸</span>
-                  <p>PyTorch is my go-to playground, where training loops feel like second nature</p>
-                </div>
-                <div className="flex items-start gap-2 sm:gap-3">
-                  <span className="text-accent terminal-glow shrink-0">▸</span>
-                  <p>XGBoost? Sometimes all you really need to get things done</p>
-                </div>
-                <div className="flex items-start gap-2 sm:gap-3">
-                  <span className="text-accent terminal-glow shrink-0">▸</span>
-                  <p>RWKV is my current curiosity, exploring its recurrent arch.</p>
-                </div>
-                <div className="flex items-start gap-2 sm:gap-3">
-                  <span className="text-accent terminal-glow shrink-0">▸</span>
-                  <p>Attention: is it really all you need, or is there a horizon beyond the transformer?</p>
-                </div>
+          <TerminalWindow title="~/welcome.log">
+            <div className="space-y-4 sm:space-y-5">
+              <TerminalPrompt command="cat welcome_message.txt" />
+              <div className="sm:ml-6 space-y-4 text-sm sm:text-base text-foreground/90">
+                <p className="leading-relaxed">
+                  Welcome to my personal space on the web. I am a Machine Learning Engineer with a passion for building intelligent systems that solve real-world problems.
+                </p>
+                <p className="leading-relaxed">
+                  My work focuses on deep learning architectures, natural language processing, and scalable AI infrastructure. I enjoy exploring the boundaries of what neural networks can achieve and translating research into practical applications.
+                </p>
+                <p className="leading-relaxed text-muted-foreground">
+                  Currently pursuing research at Sony Research India, working on cutting-edge problems in AI.
+                </p>
               </div>
             </div>
           </TerminalWindow>
         </div>
 
-        {/* Work Experience */}
+        {/* CTA to About Page */}
         <div className="mb-8 sm:mb-10 md:mb-12">
-          <TerminalWindow title="~/experience.log">
-            <div className="space-y-4 sm:space-y-6">
-              <TerminalPrompt command="cat current_work.txt" />
-              <div className="sm:ml-6 space-y-4 sm:space-y-6">                
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2">
-                    <span className="text-accent terminal-glow shrink-0">▸</span>
-                    <h3 className="text-base sm:text-lg font-semibold text-foreground">Research Intern</h3>
-                  </div>
-                  <p className="text-xs sm:text-sm text-muted-foreground sm:ml-4">Sony Research India • May 2025 - Present</p>
-                  <p className="text-sm sm:text-base text-foreground/80 sm:ml-4">learning to do research.</p>
-                </div>
+          <TerminalWindow title="~/navigate.sh">
+            <div className="space-y-4 sm:space-y-5">
+              <TerminalPrompt command="echo $NEXT_STEPS" />
+              <div className="sm:ml-6 space-y-4">
+                <p className="text-sm sm:text-base text-foreground/90 leading-relaxed">
+                  To learn more about my background, skills, education, and research interests, visit my About page.
+                </p>
+                <Link 
+                  to="/about"
+                  className="inline-flex items-center gap-2 px-4 py-2 text-sm sm:text-base border-2 border-accent/50 rounded hover:border-accent hover:bg-accent/10 transition-all terminal-glow text-accent font-medium"
+                >
+                  <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5" />
+                  <span>View Full Profile →</span>
+                </Link>
               </div>
             </div>
           </TerminalWindow>
@@ -183,10 +175,8 @@ const Index = () => {
 
         {/* Footer */}
         <footer className="mt-12 sm:mt-16 text-center space-y-2">
-          <TerminalPrompt command="echo 'Building the future with AI'" />
           <div className="text-xs text-muted-foreground/60 pt-3 sm:pt-4 border-t border-primary/20 mt-4 sm:mt-6 px-4">
-            <p>© 2025 ML Researcher. All rights reserved.</p>
-            <p className="mt-1">Last updated: October 2025</p>
+            <p>© 2025 Jyotin Goel. All rights reserved.</p>
           </div>
         </footer>
       </div>
