@@ -61,9 +61,9 @@ const About = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-primary">Research Intern</h3>
                     <p className="text-muted-foreground">Sony Research India</p>
-                    <p className="text-sm text-muted-foreground">May 2025 - Present</p>
+                    <p className="text-sm text-muted-foreground">May 2025 - November 2025</p>
                     <p className="text-foreground/80 mt-2">
-                      Learning to do research and working on large language model alignment.
+                    - worked on foundational model research and working on large language model alignment.
                     </p>
                   </div>
 
@@ -96,7 +96,6 @@ const About = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-primary">B.Tech in AI and Data Science</h3>
                     <p className="text-muted-foreground">IIT Jodhpur</p>
-                    <p className="text-sm text-muted-foreground">2022 - 2026</p>
                   </div>
                 </div>
               </div>

@@ -110,18 +110,25 @@ const Index = () => {
               <TerminalPrompt command="cat welcome_message.txt" />
               <div className="sm:ml-6 space-y-4 text-sm sm:text-base text-foreground/90">
                 <p className="leading-relaxed">
-                  Welcome to my personal space on the web. I am a Machine Learning Engineer with a passion for building intelligent systems that solve real-world problems.
+                  Salut, mes amis. I’m an ML engineer who lives at the intersection of theory and systems.
+                  I train large models, debug their odd behaviors, and occasionally convince them to behave.
+                  Some call it engineering — I prefer <span className="font-mono">model whispering</span>.
                 </p>
                 <p className="leading-relaxed">
-                  My work focuses on deep learning architectures, natural language processing, and scalable AI infrastructure. I enjoy exploring the boundaries of what neural networks can achieve and translating research into practical applications.
+                  My work spans deep learning architectures, NLP, and scalable AI infrastructure.
+                  I enjoy turning research papers into reproducible systems, pushing models to their limits,
+                  and understanding why they break when they do.
                 </p>
                 <p className="leading-relaxed text-muted-foreground">
-                  Currently pursuing research at Sony Research India, working on cutting-edge problems in AI.
+                  Currently exploring pre-doctoral and research engineer roles —
+                  with a strong interest in foundational models, efficient training,
+                  and real-world deployment at scale.
                 </p>
               </div>
             </div>
           </TerminalWindow>
         </div>
+
 
         {/* CTA to About Page */}
         <div className="mb-8 sm:mb-10 md:mb-12">
