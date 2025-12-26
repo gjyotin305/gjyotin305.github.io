@@ -110,7 +110,7 @@ const Index = () => {
               <TerminalPrompt command="cat welcome_message.txt" />
               <div className="sm:ml-6 space-y-4 text-sm sm:text-base text-foreground/90">
                 <p className="leading-relaxed">
-                  Salut, mes amis. I’m an ML engineer who lives at the intersection of theory and systems.
+                  Salut, mes amis. I’m a ML engineer who lives at the intersection of theory and systems.
                   I train large models, debug their odd behaviors, and occasionally convince them to behave.
                   Some call it engineering — I prefer <span className="font-mono">model whispering</span>.
                 </p>
