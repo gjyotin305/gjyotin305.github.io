@@ -15,5 +15,13 @@ export const blogPosts: BlogPost[] = [
     tags: ["PyTorch", "LLMs", "Training"],
     excerpt: "Good Training Practices",
     fileName: "transformer-optimization.md"
+  },
+  {
+    id: "moondream-technical",
+    title: "DeepDive on Moondream2",
+    date: "2025-12-27",
+    tags: ["PyTorch", "VLMs", "Object Detection", "VQA"],
+    excerpt: "Moondream technical deepdive",
+    fileName: "moondream_blog.md"
   }
 ];
