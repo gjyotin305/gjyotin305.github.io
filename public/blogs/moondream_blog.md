@@ -111,9 +111,15 @@ This approach stands in contrast to many contemporary VLMs that rely on brute-fo
 
 Overall, Moondream represents a compelling alternative direction for VLM design: **smaller, modular, and spatially aware**, with architectural transparency that makes both reasoning and training behavior easier to understand and extend.
 
+
+If you like the blog, I am also looking for pre-doctoral, research engineer, ml engineer (rl and training infra) roles.
+Thanks :)
+
+
 The code for this can be found in my fork specifically in the finetune folder: [GITHUB](https://github.com/gjyotin305/moondream/tree/feat/finetune_final)
 
 ---
+
 
 ## References
 
