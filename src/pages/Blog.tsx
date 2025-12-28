@@ -41,7 +41,7 @@ const Blog = () => {
               </p>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-10">
               {sortedPosts.map(post => (
                 <BlogCard key={post.id} post={post} />
               ))}
