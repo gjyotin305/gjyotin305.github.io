@@ -43,7 +43,7 @@ const Index = () => {
                 value={command}
                 onChange={(e) => setCommand(e.target.value)}
                 onKeyDown={handleCommand}
-                placeholder="type command..."
+                placeholder="dummy cli....."
                 className="flex-1 bg-transparent border-none outline-none text-foreground text-xs sm:text-sm font-mono placeholder:text-muted-foreground/50 min-w-0"
               />
               <span className="cursor inline-block"></span>
