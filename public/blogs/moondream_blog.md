@@ -96,7 +96,7 @@ For more details, you can check out my fork of Moondream.The code will be given 
 
 ![Post Finetuning Results](/post_finetuning.png)
 
-Now, as you can see this is the performance of `Detect: small-vehicles` and `Detect: ship harbours`, previously moondream skipped most vehicles before finetuning, but after finetuning it was able to detect correct vehicles, though not all. Ship harbours as well it had decent perf pre finetuning, but most finetuning, it had perfect performance on that.This goes to show that Moondream's approach towards detection via Natural Language is quite powerful and robust, it is able to get very good performance even in aerial images.
+Now, as you can see this is the performance of `Detect: small-vehicles` and `Detect: ship harbours`, previously moondream skipped most vehicles before finetuning, but after finetuning it was able to detect correct vehicles, though not all. Ship harbours as well it had decent perf pre finetuning, but post finetuning, it had near perfect performance on that.This goes to show that Moondream's approach towards detection via Natural Language is quite powerful and robust, it is able to get very good performance even in aerial images.
 
 ---
 
