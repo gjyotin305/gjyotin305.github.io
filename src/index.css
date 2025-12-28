@@ -10,7 +10,7 @@ All colors MUST be HSL.
   :root {
     /* Dark Mode - Black & White Theme */
     --background: 0 0% 4%;
-    --foreground: 0 0% 95%;
+    --foreground: 0 0% 92%;
 
     --card: 0 0% 8%;
     --card-foreground: 0 0% 95%;
@@ -19,7 +19,7 @@ All colors MUST be HSL.
     --popover-foreground: 0 0% 95%;
 
     /* White primary */
-    --primary: 0 0% 95%;
+    --primary: 0 0% 92%;
     --primary-foreground: 0 0% 4%;
 
     /* Dark gray secondary */
@@ -38,7 +38,7 @@ All colors MUST be HSL.
 
     --border: 0 0% 20%;
     --input: 0 0% 12%;
-    --ring: 0 0% 95%;
+    --ring: 0 0% 92%;
 
     --radius: 0.5rem;
 
