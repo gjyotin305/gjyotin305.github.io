@@ -8,47 +8,42 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* TRON Terminal Theme - Deep Blue/Cyan */
-    --background: 0 0% 0%;
-    --foreground: 186 100% 85%;
+    /* Clean White & Black Theme */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 5%;
 
-    --card: 225 60% 8%;
-    --card-foreground: 186 100% 85%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 5%;
 
-    --popover: 225 73% 6%;
-    --popover-foreground: 186 100% 85%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 5%;
 
-    /* Cyan primary for terminal glow */
-    --primary: 186 100% 50%;
-    --primary-foreground: 225 73% 6%;
+    /* Black primary */
+    --primary: 0 0% 5%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Electric blue secondary */
-    --secondary: 210 100% 45%;
-    --secondary-foreground: 186 100% 95%;
+    /* Gray secondary */
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 225 40% 15%;
-    --muted-foreground: 186 40% 60%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    /* Bright cyan accent */
-    --accent: 186 100% 60%;
-    --accent-foreground: 225 73% 6%;
+    /* Dark accent */
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 186 80% 25%;
-    --input: 225 50% 12%;
-    --ring: 186 100% 50%;
+    --border: 0 0% 90%;
+    --input: 0 0% 96%;
+    --ring: 0 0% 5%;
 
-    --radius: 0.25rem;
+    --radius: 0.5rem;
 
-    /* Terminal effects */
-    --terminal-glow: 186 100% 50%;
-    --terminal-shadow: 0 0 10px hsl(var(--primary) / 0.5);
-    --grid-color: 186 100% 15%;
-    
-    /* Animations */
-    --transition-terminal: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Subtle effects */
+    --transition-smooth: all 0.2s ease-in-out;
   }
 }
 
@@ -58,47 +53,19 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-black text-foreground font-mono;
+    @apply bg-background text-foreground font-mono antialiased;
   }
+}
 
-  /* Terminal text glow effect */
-  .terminal-glow {
-    text-shadow: 0 0 10px hsl(var(--primary) / 0.8), 
-                 0 0 20px hsl(var(--primary) / 0.5),
-                 0 0 30px hsl(var(--primary) / 0.3);
-  }
+/* Typing cursor */
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1em;
+  background: hsl(var(--primary));
+  animation: blink 1s step-end infinite;
+}
 
-  /* Typing cursor */
-  .cursor {
-    display: inline-block;
-    width: 8px;
-    height: 1em;
-    background: hsl(var(--primary));
-    animation: blink 1s step-end infinite;
-  }
-
-  @keyframes blink {
-    50% { opacity: 0; }
-  }
-
-  @keyframes float-fish {
-    0% {
-      transform: translate(0, 0) rotate(0deg);
-      opacity: 0;
-    }
-    10% {
-      opacity: 0.3;
-    }
-    50% {
-      transform: translate(30vw, -20vh) rotate(10deg);
-      opacity: 0.3;
-    }
-    90% {
-      opacity: 0.3;
-    }
-    100% {
-      transform: translate(60vw, -40vh) rotate(-10deg);
-      opacity: 0;
-    }
-  }
+@keyframes blink {
+  50% { opacity: 0; }
 }
