@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Dark Mode - Black & White Theme */
-    --background: 0 0% 4%;
+    --background: 0 0% 3%;
     --foreground: 0 0% 92%;
 
     --card: 0 0% 8%;
@@ -20,7 +20,7 @@ All colors MUST be HSL.
 
     /* White primary */
     --primary: 0 0% 92%;
-    --primary-foreground: 0 0% 4%;
+    --primary-foreground: 0 0% 3%;
 
     /* Dark gray secondary */
     --secondary: 0 0% 12%;
@@ -31,7 +31,7 @@ All colors MUST be HSL.
 
     /* Light accent */
     --accent: 0 0% 85%;
-    --accent-foreground: 0 0% 4%;
+    --accent-foreground: 0 0% 3%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
