@@ -112,7 +112,7 @@ const About = () => {
                   </div>
                   <div>
                     <h3 className="text-primary font-semibold mb-2">Frameworks</h3>
-                    <p className="text-foreground/80">PyTorch, PyTorch-Lightning, HuggingFace TRL</p>
+                    <p className="text-foreground/80">PyTorch, PyTorch-Lightning, HuggingFace TRL, Django, FastAPI, Gin</p>
                   </div>
                   <div>
                     <h3 className="text-primary font-semibold mb-2">Tools</h3>
@@ -120,7 +120,7 @@ const About = () => {
                   </div>
                   <div>
                     <h3 className="text-primary font-semibold mb-2">Cloud</h3>
-                    <p className="text-foreground/80">AWS, GCP, Azure ML</p>
+                    <p className="text-foreground/80">AWS, GCP, Azure ML, Modal</p>
                   </div>
                 </div>
               </div>
